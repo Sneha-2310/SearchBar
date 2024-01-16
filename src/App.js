@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {useState} from 'react';
 function App() {
+  const [tagValue, setTagValue] = useState("");
+  const [tags,setTags] = useState([]);
+  const addTags=(e)=>{
+    if(e.keyCode === 13 &&  tagValue){
+      // alert(tagValue);
+      setTags([...tags,tagValue]);
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className="main">
+    <div className='content'>
+      <div className='taginput'>
+        
+        {
+          tags.map((item,index)=>{
+             return<button key={index}>
+              {item}
+            </button>
+          })
+        }
+        
+        <input type='text' onChange={(e)=>{setTagValue(e.target.value)}}
+        onKeyDown={addTags}/>
+      </div>
+
     </div>
+
+   </div>
   );
 }
 
