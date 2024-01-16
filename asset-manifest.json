@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SearchBar/static/css/main.3a16f5ec.css",
+    "main.js": "/SearchBar/static/js/main.7f9c5880.js",
+    "static/js/787.d4aba7ab.chunk.js": "/SearchBar/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/SearchBar/index.html",
+    "main.3a16f5ec.css.map": "/SearchBar/static/css/main.3a16f5ec.css.map",
+    "main.7f9c5880.js.map": "/SearchBar/static/js/main.7f9c5880.js.map",
+    "787.d4aba7ab.chunk.js.map": "/SearchBar/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a16f5ec.css",
+    "static/js/main.7f9c5880.js"
+  ]
+}
